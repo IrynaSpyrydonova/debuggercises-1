@@ -9,10 +9,12 @@ const repeatLengthTimes = (toRepeat) => {
   if (typeof toRepeat !== 'string') { throw new TypeError('toRepeat'); }
 
   let result = '';
-  for (let i = 0; i < toRepeat.length; i++) {
+  let x = 0;
+  while (x < toRepeat.length) {
+    x++;
     result += toRepeat;
   }
-
+  
   if (typeof result !== 'string') { throw new TypeError('result'); }
   return result;
 };

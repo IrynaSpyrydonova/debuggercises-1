@@ -10,11 +10,13 @@
 const repeater = (text, repeats) => {
   if (typeof text !== 'string') { throw new TypeError('text'); }
   if (typeof repeats !== 'number') { throw new TypeError('repeats'); }
-
-  while (_) {
-
+  let x= 0;
+  let result = '';
+  while (x !== repeats) {
+    result += `${x}${text} `;
+    x++;
   }
-
+  
   if (typeof result !== 'string') { throw new TypeError('result'); }
   return result;
 };

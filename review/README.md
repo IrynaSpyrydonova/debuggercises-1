@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/23/2020, 8:19:35 PM 
 
 ## /exercises 
 
@@ -18,11 +18,11 @@
     - [/2-reusing-variables.js](./01-variables/examples/README.md#2-reusing-variablesjs)  
     - [/3-const-vs-let.js](./01-variables/examples/README.md#3-const-vs-letjs) - _error_ 
   - [/exercises](./01-variables/exercises/README.md)
-    - [/1-let.js](./01-variables/exercises/README.md#1-letjs) - _incomplete_ 
-    - [/2-let.js](./01-variables/exercises/README.md#2-letjs) - _incomplete_ 
-    - [/3-let-or-const.js](./01-variables/exercises/README.md#3-let-or-constjs) - _incomplete_ 
-    - [/4-let-or-const.js](./01-variables/exercises/README.md#4-let-or-constjs) - _incomplete_ 
-    - [/5-let-or-const.js](./01-variables/exercises/README.md#5-let-or-constjs) - _incomplete_ 
+    - [/1-let.js](./01-variables/exercises/README.md#1-letjs)  
+    - [/2-let.js](./01-variables/exercises/README.md#2-letjs)  
+    - [/3-let-or-const.js](./01-variables/exercises/README.md#3-let-or-constjs)  
+    - [/4-let-or-const.js](./01-variables/exercises/README.md#4-let-or-constjs)  
+    - [/5-let-or-const.js](./01-variables/exercises/README.md#5-let-or-constjs)  
 - [/02-primitive-types](./02-primitive-types/README.md)
   - [/examples](./02-primitive-types/examples/README.md)
     - [/boolean-undefined-null.js](./02-primitive-types/examples/README.md#boolean-undefined-nulljs)  
@@ -30,7 +30,7 @@
     - [/string.js](./02-primitive-types/examples/README.md#stringjs)  
     - [/typeof.js](./02-primitive-types/examples/README.md#typeofjs)  
   - [/exercises](./02-primitive-types/exercises/README.md)
-    - [/fill-in-the-type.js](./02-primitive-types/exercises/README.md#fill-in-the-typejs) - _incomplete_ 
+    - [/fill-in-the-type.js](./02-primitive-types/exercises/README.md#fill-in-the-typejs)  
 - [/03-comparing-and-asserting](./03-comparing-and-asserting/README.md)
   - [/examples](./03-comparing-and-asserting/examples/README.md)
     - [/1-strict-equality.js](./03-comparing-and-asserting/examples/README.md#1-strict-equalityjs)  
@@ -40,8 +40,8 @@
     - [/object-is.js](./03-comparing-and-asserting/examples/README.md#object-isjs)  
     - [/strict-inequality.js](./03-comparing-and-asserting/examples/README.md#strict-inequalityjs)  
   - [/exercises](./03-comparing-and-asserting/exercises/README.md)
-    - [/1.js](./03-comparing-and-asserting/exercises/README.md#1js) - _incomplete_ 
-    - [/2.js](./03-comparing-and-asserting/exercises/README.md#2js) - _incomplete_ 
+    - [/1.js](./03-comparing-and-asserting/exercises/README.md#1js) - _pass_ 
+    - [/2.js](./03-comparing-and-asserting/exercises/README.md#2js) - _pass_ 
 - [/04-value-swaps](./04-value-swaps/README.md)
   - [/example-swap-in-steps](./04-value-swaps/example-swap-in-steps/README.md)
     - [/0-setup.js](./04-value-swaps/example-swap-in-steps/README.md#0-setupjs) - _fail_ 
@@ -85,9 +85,9 @@
     - [/3-number.js](./06-explicit-coercion/examples/README.md#3-numberjs)  
     - [/4-about-nan.js](./06-explicit-coercion/examples/README.md#4-about-nanjs) - _fail_ 
   - [/exercises](./06-explicit-coercion/exercises/README.md)
-    - [/1-write-expected.js](./06-explicit-coercion/exercises/README.md#1-write-expectedjs) - _incomplete_ 
-    - [/2-write-arguments.js](./06-explicit-coercion/exercises/README.md#2-write-argumentsjs) - _incomplete_ 
-    - [/3-write-function.js](./06-explicit-coercion/exercises/README.md#3-write-functionjs) - _fail_ 
+    - [/1-write-expected.js](./06-explicit-coercion/exercises/README.md#1-write-expectedjs) - _pass_ 
+    - [/2-write-arguments.js](./06-explicit-coercion/exercises/README.md#2-write-argumentsjs) - _pass_ 
+    - [/3-write-function.js](./06-explicit-coercion/exercises/README.md#3-write-functionjs) - _pass_ 
 - [/07-logical-operators](./07-logical-operators/README.md)
   - [/examples](./07-logical-operators/examples/README.md)
     - [/0-truthiness.js](./07-logical-operators/examples/README.md#0-truthinessjs)  
@@ -97,29 +97,30 @@
     - [/4-not.js](./07-logical-operators/examples/README.md#4-notjs)  
     - [/5-short-circuiting.js](./07-logical-operators/examples/README.md#5-short-circuitingjs)  
   - [/exercises](./07-logical-operators/exercises/README.md)
-    - [/and.js](./07-logical-operators/exercises/README.md#andjs) - _incomplete_ 
-    - [/not.js](./07-logical-operators/exercises/README.md#notjs) - _incomplete_ 
-    - [/or.js](./07-logical-operators/exercises/README.md#orjs) - _incomplete_ 
+    - [/and.js](./07-logical-operators/exercises/README.md#andjs) - _pass_ 
+    - [/not.js](./07-logical-operators/exercises/README.md#notjs) - _pass_ 
+    - [/or.js](./07-logical-operators/exercises/README.md#orjs) - _pass_ 
+    - [/ternary.js](./07-logical-operators/exercises/README.md#ternaryjs) - _pass_ 
 - [/08-functions-201](./08-functions-201/README.md)
   - [/0-example.js](./08-functions-201/README.md#0-examplejs) - _pass_ 
-  - [/1-exercise.js](./08-functions-201/README.md#1-exercisejs) - _incomplete_ 
-  - [/2-exercise.js](./08-functions-201/README.md#2-exercisejs) - _incomplete_ 
+  - [/1-exercise.js](./08-functions-201/README.md#1-exercisejs) - _pass_ 
+  - [/2-exercise.js](./08-functions-201/README.md#2-exercisejs) - _pass_ 
 - [/09-block-scope](./09-block-scope/README.md)
   - [/1-missing-values](./09-block-scope/1-missing-values/README.md)
-    - [/1.js](./09-block-scope/1-missing-values/README.md#1js) - _incomplete_ 
-    - [/2.js](./09-block-scope/1-missing-values/README.md#2js) - _incomplete_ 
+    - [/1.js](./09-block-scope/1-missing-values/README.md#1js) - _pass_ 
+    - [/2.js](./09-block-scope/1-missing-values/README.md#2js) - _pass_ 
   - [/2-missing-variables](./09-block-scope/2-missing-variables/README.md)
-    - [/1.js](./09-block-scope/2-missing-variables/README.md#1js) - _incomplete_ 
-    - [/2.js](./09-block-scope/2-missing-variables/README.md#2js) - _incomplete_ 
-    - [/3.js](./09-block-scope/2-missing-variables/README.md#3js) - _incomplete_ 
+    - [/1.js](./09-block-scope/2-missing-variables/README.md#1js) - _pass_ 
+    - [/2.js](./09-block-scope/2-missing-variables/README.md#2js) - _pass_ 
+    - [/3.js](./09-block-scope/2-missing-variables/README.md#3js) - _pass_ 
   - [/3-assign-values](./09-block-scope/3-assign-values/README.md)
-    - [/1.js](./09-block-scope/3-assign-values/README.md#1js) - _incomplete_ 
-    - [/2.js](./09-block-scope/3-assign-values/README.md#2js) - _incomplete_ 
-    - [/3.js](./09-block-scope/3-assign-values/README.md#3js) - _incomplete_ 
+    - [/1.js](./09-block-scope/3-assign-values/README.md#1js) - _pass_ 
+    - [/2.js](./09-block-scope/3-assign-values/README.md#2js) - _pass_ 
+    - [/3.js](./09-block-scope/3-assign-values/README.md#3js) - _pass_ 
   - [/4-declare-and-assign](./09-block-scope/4-declare-and-assign/README.md)
-    - [/1.js](./09-block-scope/4-declare-and-assign/README.md#1js) - _incomplete_ 
-    - [/2.js](./09-block-scope/4-declare-and-assign/README.md#2js) - _incomplete_ 
-    - [/3.js](./09-block-scope/4-declare-and-assign/README.md#3js) - _incomplete_ 
+    - [/1.js](./09-block-scope/4-declare-and-assign/README.md#1js) - _pass_ 
+    - [/2.js](./09-block-scope/4-declare-and-assign/README.md#2js) - _pass_ 
+    - [/3.js](./09-block-scope/4-declare-and-assign/README.md#3js) - _pass_ 
 - [/10-conditional-statements](./10-conditional-statements/README.md)
   - [/0-examples](./10-conditional-statements/0-examples/README.md)
     - [/1-if.js](./10-conditional-statements/0-examples/README.md#1-ifjs) - _pass_ 
@@ -130,10 +131,10 @@
     - [/6-unreachable-paths.js](./10-conditional-statements/0-examples/README.md#6-unreachable-pathsjs) - _pass_ 
   - [/1-execution-paths](./10-conditional-statements/1-execution-paths/README.md)
     - [/1-write-expected.js](./10-conditional-statements/1-execution-paths/README.md#1-write-expectedjs) - _incomplete_ 
-    - [/2-write-arguments.js](./10-conditional-statements/1-execution-paths/README.md#2-write-argumentsjs) - _incomplete_ 
+    - [/2-write-arguments.js](./10-conditional-statements/1-execution-paths/README.md#2-write-argumentsjs) - _pass_ 
     - [/3-write-arguments.js](./10-conditional-statements/1-execution-paths/README.md#3-write-argumentsjs) - _fail_ 
     - [/4-write-function.js](./10-conditional-statements/1-execution-paths/README.md#4-write-functionjs) - _incomplete_ 
-    - [/5-write-function.js](./10-conditional-statements/1-execution-paths/README.md#5-write-functionjs) - _fail_ 
+    - [/5-write-function.js](./10-conditional-statements/1-execution-paths/README.md#5-write-functionjs) - _pass_ 
   - [/2-conditional-bodies](./10-conditional-statements/2-conditional-bodies/README.md)
     - [/1-write-expected.js](./10-conditional-statements/2-conditional-bodies/README.md#1-write-expectedjs) - _incomplete_ 
     - [/2-write-arguments.js](./10-conditional-statements/2-conditional-bodies/README.md#2-write-argumentsjs) - _incomplete_ 
@@ -157,14 +158,14 @@
     - [/1-documenting-functions.js](./12-functions-301/0-examples/README.md#1-documenting-functionsjs)  
     - [/2-enforcing-types.js](./12-functions-301/0-examples/README.md#2-enforcing-typesjs)  
   - [/1-fill-in-the-blanks](./12-functions-301/1-fill-in-the-blanks/README.md)
-    - [/1-write-tests.js](./12-functions-301/1-fill-in-the-blanks/README.md#1-write-testsjs) - _incomplete_ 
-    - [/2-write-tests.js](./12-functions-301/1-fill-in-the-blanks/README.md#2-write-testsjs) - _incomplete_ 
-    - [/3-pass-tests.js](./12-functions-301/1-fill-in-the-blanks/README.md#3-pass-testsjs) - _incomplete_ 
-    - [/4-pass-tests.js](./12-functions-301/1-fill-in-the-blanks/README.md#4-pass-testsjs) - _incomplete_ 
+    - [/1-write-tests.js](./12-functions-301/1-fill-in-the-blanks/README.md#1-write-testsjs) - _pass_ 
+    - [/2-write-tests.js](./12-functions-301/1-fill-in-the-blanks/README.md#2-write-testsjs) - _pass_ 
+    - [/3-pass-tests.js](./12-functions-301/1-fill-in-the-blanks/README.md#3-pass-testsjs) - _pass_ 
+    - [/4-pass-tests.js](./12-functions-301/1-fill-in-the-blanks/README.md#4-pass-testsjs) - _pass_ 
   - [/2-fix-the-bugs](./12-functions-301/2-fix-the-bugs/README.md)
-    - [/1.js](./12-functions-301/2-fix-the-bugs/README.md#1js) - _fail_ 
-    - [/2.js](./12-functions-301/2-fix-the-bugs/README.md#2js) - _error_ 
-    - [/3.js](./12-functions-301/2-fix-the-bugs/README.md#3js) - _fail_ 
+    - [/1.js](./12-functions-301/2-fix-the-bugs/README.md#1js) - _pass_ 
+    - [/2.js](./12-functions-301/2-fix-the-bugs/README.md#2js) - _fail_ 
+    - [/3.js](./12-functions-301/2-fix-the-bugs/README.md#3js) - _pass_ 
 - [/13-roles-of-variables](./13-roles-of-variables/README.md)
   - [/readme.js](./13-roles-of-variables/README.md#readmejs)  
   - [/back-tracing.js](./13-roles-of-variables/README.md#back-tracingjs)  
@@ -175,28 +176,28 @@
     - [/prefix-decrement.js](./14-increment-and-decrement/examples/README.md#prefix-decrementjs)  
     - [/prefix-increment.js](./14-increment-and-decrement/examples/README.md#prefix-incrementjs)  
   - [/exercises](./14-increment-and-decrement/exercises/README.md)
-    - [/1.js](./14-increment-and-decrement/exercises/README.md#1js) - _incomplete_ 
-    - [/2.js](./14-increment-and-decrement/exercises/README.md#2js) - _incomplete_ 
-    - [/3.js](./14-increment-and-decrement/exercises/README.md#3js) - _incomplete_ 
+    - [/1.js](./14-increment-and-decrement/exercises/README.md#1js) - _pass_ 
+    - [/2.js](./14-increment-and-decrement/exercises/README.md#2js) - _pass_ 
+    - [/3.js](./14-increment-and-decrement/exercises/README.md#3js) - _pass_ 
 - [/15-while](./15-while/README.md)
   - [/examples](./15-while/examples/README.md)
     - [/1-while.js](./15-while/examples/README.md#1-whilejs) - _pass_ 
     - [/2-while-infinite.js](./15-while/examples/README.md#2-while-infinitejs) - _too much iteration_ 
   - [/exercises](./15-while/exercises/README.md)
-    - [/1-write-tests.js](./15-while/exercises/README.md#1-write-testsjs) - _incomplete_ 
-    - [/2-fix-the-bugs.js](./15-while/exercises/README.md#2-fix-the-bugsjs) - _error_ 
-    - [/3-pass-tests.js](./15-while/exercises/README.md#3-pass-testsjs) - _incomplete_ 
-    - [/4-pass-tests.js](./15-while/exercises/README.md#4-pass-testsjs) - _incomplete_ 
+    - [/1-write-tests.js](./15-while/exercises/README.md#1-write-testsjs) - _pass_ 
+    - [/2-fix-the-bugs.js](./15-while/exercises/README.md#2-fix-the-bugsjs) - _pass_ 
+    - [/3-pass-tests.js](./15-while/exercises/README.md#3-pass-testsjs) - _pass_ 
+    - [/4-pass-tests.js](./15-while/exercises/README.md#4-pass-testsjs) - _pass_ 
 - [/16-for](./16-for/README.md)
   - [/examples](./16-for/examples/README.md)
     - [/1-for-many-lines.js](./16-for/examples/README.md#1-for-many-linesjs) - _pass_ 
     - [/2-for-one-line.js](./16-for/examples/README.md#2-for-one-linejs) - _pass_ 
     - [/3-for-infinite.js](./16-for/examples/README.md#3-for-infinitejs) - _too much iteration_ 
   - [/exercises](./16-for/exercises/README.md)
-    - [/1-write-tests.js](./16-for/exercises/README.md#1-write-testsjs) - _incomplete_ 
-    - [/2-fix-the-bugs.js](./16-for/exercises/README.md#2-fix-the-bugsjs) - _error_ 
-    - [/3-pass-tests.js](./16-for/exercises/README.md#3-pass-testsjs) - _incomplete_ 
-    - [/4-pass-tests.js](./16-for/exercises/README.md#4-pass-testsjs) - _incomplete_ 
+    - [/1-write-tests.js](./16-for/exercises/README.md#1-write-testsjs) - _pass_ 
+    - [/2-fix-the-bugs.js](./16-for/exercises/README.md#2-fix-the-bugsjs) - _pass_ 
+    - [/3-pass-tests.js](./16-for/exercises/README.md#3-pass-testsjs) - _pass_ 
+    - [/4-pass-tests.js](./16-for/exercises/README.md#4-pass-testsjs) - _pass_ 
 - [/17-refactoring-loops](./17-refactoring-loops/README.md)
   - [/exercises](./17-refactoring-loops/exercises/README.md)
     - [/1-for-to-while.js](./17-refactoring-loops/exercises/README.md#1-for-to-whilejs) - _pass_ 
@@ -220,21 +221,21 @@
     - [/1-plus.js](./19-implicit-coercion/0-examples/README.md#1-plusjs) - _pass_ 
     - [/2-loose-equality.js](./19-implicit-coercion/0-examples/README.md#2-loose-equalityjs) - _pass_ 
   - [/1-write-tests-arithmetic](./19-implicit-coercion/1-write-tests-arithmetic/README.md)
-    - [/division.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#divisionjs) - _incomplete_ 
-    - [/multiplication.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#multiplicationjs) - _incomplete_ 
-    - [/remainder.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#remainderjs) - _incomplete_ 
-    - [/subtraction.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#subtractionjs) - _incomplete_ 
-    - [/unary-minus.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#unary-minusjs) - _incomplete_ 
-    - [/unary-plus.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#unary-plusjs) - _incomplete_ 
+    - [/division.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#divisionjs) - _pass_ 
+    - [/multiplication.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#multiplicationjs) - _pass_ 
+    - [/remainder.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#remainderjs) - _fail_ 
+    - [/subtraction.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#subtractionjs) - _pass_ 
+    - [/unary-minus.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#unary-minusjs) - _fail_ 
+    - [/unary-plus.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#unary-plusjs) - _pass_ 
   - [/1-write-tests-relational](./19-implicit-coercion/1-write-tests-relational/README.md)
-    - [/greater-than-or-equal-to.js](./19-implicit-coercion/1-write-tests-relational/README.md#greater-than-or-equal-tojs) - _incomplete_ 
-    - [/greater-than.js](./19-implicit-coercion/1-write-tests-relational/README.md#greater-thanjs) - _incomplete_ 
-    - [/less-than-or-equal-to.js](./19-implicit-coercion/1-write-tests-relational/README.md#less-than-or-equal-tojs) - _incomplete_ 
-    - [/less-than.js](./19-implicit-coercion/1-write-tests-relational/README.md#less-thanjs) - _incomplete_ 
+    - [/greater-than-or-equal-to.js](./19-implicit-coercion/1-write-tests-relational/README.md#greater-than-or-equal-tojs) - _pass_ 
+    - [/greater-than.js](./19-implicit-coercion/1-write-tests-relational/README.md#greater-thanjs) - _pass_ 
+    - [/less-than-or-equal-to.js](./19-implicit-coercion/1-write-tests-relational/README.md#less-than-or-equal-tojs) - _pass_ 
+    - [/less-than.js](./19-implicit-coercion/1-write-tests-relational/README.md#less-thanjs) - _pass_ 
   - [/2-replicate](./19-implicit-coercion/2-replicate/README.md)
-    - [/loose-inequality.js](./19-implicit-coercion/2-replicate/README.md#loose-inequalityjs) - _fail_ 
-    - [/remainder.js](./19-implicit-coercion/2-replicate/README.md#remainderjs) - _error_ 
-    - [/unary-minus.js](./19-implicit-coercion/2-replicate/README.md#unary-minusjs) - _fail_ 
+    - [/loose-inequality.js](./19-implicit-coercion/2-replicate/README.md#loose-inequalityjs) - _pass_ 
+    - [/remainder.js](./19-implicit-coercion/2-replicate/README.md#remainderjs) - _pass_ 
+    - [/unary-minus.js](./19-implicit-coercion/2-replicate/README.md#unary-minusjs) - _pass_ 
 - [/20-operator-precedence](./20-operator-precedence/README.md)
   - [/0-examples](./20-operator-precedence/0-examples/README.md)
     - [/readme.js](./20-operator-precedence/0-examples/README.md#readmejs) - _pass_ 

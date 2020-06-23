@@ -1,12 +1,12 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/23/2020, 8:19:35 PM 
 
 ## [exercises](../README.md)/08-functions-201 
 
 - [/0-example.js](#0-examplejs) - _pass_ 
-- [/1-exercise.js](#1-exercisejs) - _incomplete_ 
-- [/2-exercise.js](#2-exercisejs) - _incomplete_ 
+- [/1-exercise.js](#1-exercisejs) - _pass_ 
+- [/2-exercise.js](#2-exercisejs) - _pass_ 
 ---
 
 ## /0-example.js 
@@ -92,22 +92,19 @@ console.assert(_3_actualLoop === _3_expect, 'Test 3 Loop');
 
 ## /1-exercise.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../exercises/08-functions-201/1-exercise.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at notAndA (  ...  /exercises/08-functions-201/1-exercise.js:7:3)
-    at Object.<anonymous> (  ...  /exercises/08-functions-201/1-exercise.js:19:20)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
++ PASS: Test 1 A
++ PASS: Test 1 B
++ PASS: Test 2 A
++ PASS: Test 2 B
++ PASS: Test 3 A
++ PASS: Test 3 B
++ PASS: Test 4 A
++ PASS: Test 4 B
 ```
 
 ```js
@@ -117,12 +114,14 @@ UNCAUGHT: ReferenceError: _ is not defined
 //  hint: demorgan
 
 const notAndA = (x, y) => {
-  return _;
+  const result = !x && !y;
+  return result;
 };
 
 
 const notAndB = (x, y) => {
-  return _;
+  const result = !(x || y);
+  return result;
 };
 
 
@@ -166,22 +165,19 @@ console.assert(_4_actualB === _4_expect, 'Test 4 B');
 
 ## /2-exercise.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../exercises/08-functions-201/2-exercise.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at notAndA (  ...  /exercises/08-functions-201/2-exercise.js:7:3)
-    at Object.<anonymous> (  ...  /exercises/08-functions-201/2-exercise.js:18:20)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
++ PASS: Test 1 A
++ PASS: Test 1 B
++ PASS: Test 2 A
++ PASS: Test 2 B
++ PASS: Test 3 A
++ PASS: Test 3 B
++ PASS: Test 4 A
++ PASS: Test 4 B
 ```
 
 ```js
@@ -191,11 +187,13 @@ UNCAUGHT: ReferenceError: _ is not defined
 //  hint: demorgan
 
 const notAndA = (x, y) => {
-  return _;
+  const result = !(x && y)
+  return result;
 };
 
 const notAndB = (x, y) => {
-  return _;
+  const result = !x || !y;
+  return result;
 };
 
 

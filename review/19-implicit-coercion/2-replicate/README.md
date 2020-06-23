@@ -1,36 +1,36 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/23/2020, 8:19:35 PM 
 
 ## [exercises](../../README.md)/[19-implicit-coercion](../README.md)/2-replicate 
 
-- [/loose-inequality.js](#loose-inequalityjs) - _fail_ 
-- [/remainder.js](#remainderjs) - _error_ 
-- [/unary-minus.js](#unary-minusjs) - _fail_ 
+- [/loose-inequality.js](#loose-inequalityjs) - _pass_ 
+- [/remainder.js](#remainderjs) - _pass_ 
+- [/unary-minus.js](#unary-minusjs) - _pass_ 
 ---
 
 ## /loose-inequality.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/19-implicit-coercion/2-replicate/loose-inequality.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
-- FAIL: Test 5
-- FAIL: Test 6
-- FAIL: Test 7
-- FAIL: Test 8
-- FAIL: Test 9
-- FAIL: Test 10
-- FAIL: Test 11
-- FAIL: Test 12
-- FAIL: Test 13
-- FAIL: Test 14
-- FAIL: Test 15
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
++ PASS: Test 10
++ PASS: Test 11
++ PASS: Test 12
++ PASS: Test 13
++ PASS: Test 14
++ PASS: Test 15
 ```
 
 ```js
@@ -44,7 +44,8 @@
  * @returns {boolean}
  */
 function looseInequality(a, b) {
-
+   const result = !(a == b) ? true : false;
+   return result;
 };
 
 const _01_a = null;
@@ -145,22 +146,20 @@ console.assert(_15_copy === _15_native, 'Test 15');
 
 ## /remainder.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/19-implicit-coercion/2-replicate/remainder.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _1_expect is not defined
-    at Object.<anonymous> (  ...  /exercises/19-implicit-coercion/2-replicate/remainder.js:17:26)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -173,62 +172,73 @@ UNCAUGHT: ReferenceError: _1_expect is not defined
  * @returns {number}
  */
 function remainder(a, b) {
-
+    const dividend = +a;
+    const divisor = +b;
+    if (isNaN(divisor)){
+        return divisor;
+    }else if (dividend >= divisor){
+        const quotient = Math.floor(dividend / divisor);
+        const rem = dividend - (divisor * quotient);
+        return rem;
+    } else {
+        return dividend;
+    }
 };
 
 const _1_a = '8';
 const _1_b = 2;
 const _1_native = _1_a % _1_b;
 const _1_copy = remainder(_1_a, _1_b);
-console.assert(Object.is(_1_expect, _1_native), 'Test 1');
+console.assert(Object.is(_1_copy, _1_native), 'Test 1');
 
 const _2_a = '2';
 const _2_b = 8;
 const _2_native = _2_a % _2_b;
 const _2_copy = remainder(_2_a, _2_b);
-console.assert(Object.is(_2_expect, _2_native), 'Test 2');
+console.assert(Object.is(_2_copy, _2_native), 'Test 2');
 
 const _3_a = '5';
 const _3_b = Infinity;
 const _3_native = _3_a % _3_b;
 const _3_copy = remainder(_3_a, _3_b);
-console.assert(Object.is(_3_expect, _3_native), 'Test 3');
+console.assert(Object.is(_3_copy, _3_native), 'Test 3');
 
 const _4_a = '5';
 const _4_b = false;
 const _4_native = _4_a % _4_b;
 const _4_copy = remainder(_4_a, _4_b);
-console.assert(Object.is(_4_expect, _4_native), 'Test 4');
+console.assert(Object.is(_4_copy, _4_native), 'Test 4');
 
 const _5_a = true;
 const _5_b = 18;
 const _5_native = _5_a % _5_b;
 const _5_copy = remainder(_5_a, _5_b);
-console.assert(Object.is(_5_expect, _5_native), 'Test 5');
+console.assert(Object.is(_5_copy, _5_native), 'Test 5');
 
 const _6_a = 8;
 const _6_b = undefined;
 const _6_native = _6_a % _6_b;
 const _6_copy = remainder(_6_a, _6_b);
-console.assert(Object.is(_6_expect, _6_native), 'Test 6');
+console.assert(Object.is(_6_copy, _6_native), 'Test 6');
 
 const _7_a = 0;
 const _7_b = 8;
 const _7_native = _7_a % _7_b;
 const _7_copy = remainder(_7_a, _7_b);
-console.assert(Object.is(_7_expect, _7_native), 'Test 7');
+console.assert(Object.is(_7_copy, _7_native), 'Test 7');
 
 const _8_a = Infinity;
 const _8_b = 8;
 const _8_native = _8_a % _8_b;
 const _8_copy = remainder(_8_a, _8_b);
-console.assert(Object.is(_8_expect, _8_native), 'Test 8');
+console.assert(Object.is(_8_copy, _8_native), 'Test 8');
 
 const _9_a = undefined;
 const _9_b = '4';
 const _9_native = _9_a % _9_b;
 const _9_copy = remainder(_9_a, _9_b);
-console.assert(Object.is(_9_expect, _9_native), 'Test 9');
+console.assert(Object.is(_9_copy, _9_native), 'Test 9');
+
 
 ```
 
@@ -238,20 +248,20 @@ console.assert(Object.is(_9_expect, _9_native), 'Test 9');
 
 ## /unary-minus.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/19-implicit-coercion/2-replicate/unary-minus.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
-- FAIL: Test 5
-- FAIL: Test 6
-- FAIL: Test 7
-- FAIL: Test 8
-- FAIL: Test 9
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -263,7 +273,8 @@ console.assert(Object.is(_9_expect, _9_native), 'Test 9');
  * @returns {number}
  */
 function unaryMinus(a) {
-
+    const number = -Number(a);
+    return number;
 };
 
 const _1_a = 1;

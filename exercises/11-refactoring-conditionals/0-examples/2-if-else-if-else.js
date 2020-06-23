@@ -10,6 +10,7 @@ const statement = (a, b) => {
     result = 'path 3';
   }
   return result;
+
 };
 
 const operator = (a, b) => {

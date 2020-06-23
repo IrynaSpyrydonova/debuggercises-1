@@ -7,9 +7,12 @@
  * @param {any} b
  * @returns {boolean}
  */
-const mystery = (a, b) => typeof a !== b
+const mystery = (a, b) => {
+  const result = typeof a !== b
   || !b
   && (Number.isNaN(b) || isNaN(a));
+  return result;
+}
 
 
 const _1_arg1 = 1;

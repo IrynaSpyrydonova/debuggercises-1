@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/23/2020, 8:19:35 PM 
 
 ## [exercises](../../README.md)/[17-refactoring-loops](../README.md)/exercises 
 
@@ -37,10 +37,12 @@ const repeatLengthTimes = (toRepeat) => {
   if (typeof toRepeat !== 'string') { throw new TypeError('toRepeat'); }
 
   let result = '';
-  for (let i = 0; i < toRepeat.length; i++) {
+  let x = 0;
+  while (x < toRepeat.length) {
+    x++;
     result += toRepeat;
   }
-
+  
   if (typeof result !== 'string') { throw new TypeError('result'); }
   return result;
 };
@@ -107,14 +109,15 @@ const mystery = (x) => {
   if (typeof x !== 'number') { throw new TypeError('x'); }
 
   let result = 0;
-  for (let i = 0; i !== Math.abs(x); i++) {
+  let i = 0;
+  while (i !== Math.abs(x)){
+    i++;
     if (x > 0) {
       result += 1;
     } else {
       result += -1;
     }
   }
-
   if (typeof result !== 'number') { throw new TypeError('result'); }
   return result;
 };
@@ -194,10 +197,8 @@ const mystery = (x) => {
   if (typeof x !== 'number') { throw new TypeError('x'); }
 
   let result = 0;
-  let i = 0;
-  while (i !== x) {
+   for (let i = 0; i !== x; i += 2){
     result += i;
-    i += 2;
   }
 
   if (typeof result !== 'number') { throw new TypeError('result'); }
@@ -266,11 +267,10 @@ console.assert(_6_actual === _6_expect, 'Test  6');
  */
 const mystery = (x) => {
   if (typeof x !== 'number') { throw new TypeError('x'); }
-
+  
   let result = 0;
-  let i = 6;
-  while (i % 6 !== x) {
-    result = result + i--;
+  for(let i = 6; i % 6 !== x; i-- ){
+    result += i;
   }
 
   if (typeof result !== 'number') { throw new TypeError('result'); }

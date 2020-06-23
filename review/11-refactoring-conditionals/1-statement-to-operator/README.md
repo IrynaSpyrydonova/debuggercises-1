@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/23/2020, 8:19:35 PM 
 
 ## [exercises](../../README.md)/[11-refactoring-conditionals](../README.md)/1-statement-to-operator 
 
@@ -27,14 +27,12 @@
 
 // refactor this function ot use a ternary operator
 const conditional = (a, b) => {
-  let result;
-  if (a && b) {
-    result = !a;
-  } else {
-    result = a === b;
-  }
+  const result = a && b ? !a : a === b;
   return result;
+
 };
+
+  
 
 // path 1
 const _1_expect = false;
@@ -80,16 +78,16 @@ console.assert(_6_actual === _6_expect, 'Test 4');
 
 // refactor this function ot use a ternary operator
 const conditional = (a, b) => {
-  let result;
-  if (a && b) {
-    result = !a;
-  } else if (a || b) {
-    result = !b;
-  } else {
-    result = a === b;
-  }
-  return result;
+  
+    const result = (a && b) 
+    ? !a 
+    : (a || b)
+    ? !b 
+    : a === b;
+    return result;
 };
+
+
 
 // path 1
 const _1_expect = false;
@@ -145,22 +143,17 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 'use strict';
 
 const conditional = (a, b) => {
-  let result;
-  if (typeof a === 'number') {
-    if (typeof b === 'number') {
-      result = a + b;
-    } else {
-      result = b;
-    }
-  } else {
-    if (typeof b === 'string') {
-      result = b + a;
-    } else {
-      result = a;
-    }
-  }
+  const result = typeof a === 'number' 
+  ? typeof b === 'number'
+    ?  a + b 
+    :  b
+  : typeof b === 'string'
+    ?  b + a
+    :  a;
   return result;
 };
+
+
 
 // path 1
 const _1_expect = 24;

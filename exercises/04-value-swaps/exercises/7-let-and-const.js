@@ -14,7 +14,9 @@ a = b;
 const d = a;
 // write your code below here
 
-
+a = c;
+c = b;
+b = temp;
 
 
 // fill in in the _'s to pass the final assertions

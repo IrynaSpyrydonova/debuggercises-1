@@ -8,6 +8,11 @@ let temp = null;
 
 // write some code
 
+temp = c;
+c = a;
+a = b;
+b = d;
+d = temp;
 
 
 

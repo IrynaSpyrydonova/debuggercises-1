@@ -8,11 +8,13 @@
 const repeatLengthTimes = (toRepeat) => {
   if (typeof toRepeat !== 'string') { throw new TypeError('toRepeat'); }
 
-  const finalResultLength = toRepeat.length * toRepeat.length;
+  const finalResultLength = toRepeat.length;
+  let x = 0;
+  let result = '';
 
-  let result;
-  while (result < finalResultLength) {
-    result + toRepeat;
+  while (x !== finalResultLength) {
+    x++;
+    result += toRepeat;
   }
 
   if (typeof result !== 'string') { throw new TypeError('result'); }

@@ -11,11 +11,11 @@ const mystery = (a) => {
 };
 
 
-const _1_expect = _;
+const _1_expect = 0;
 const _1_actual = mystery(0);
 console.assert(Object.is(_1_actual, _1_expect), 'Test 1');
 
-const _2_expect = _;
+const _2_expect = 202;
 const _2_actual = mystery(101);
 console.assert(Object.is(_2_actual, _2_expect), 'Test 2');
 

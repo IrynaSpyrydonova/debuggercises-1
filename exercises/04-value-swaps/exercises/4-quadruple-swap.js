@@ -8,7 +8,12 @@ let temp = null;
 
 // write some code!
 
-
+temp = a;
+a = c;
+c = temp;
+temp = b;
+b = d;
+d = temp;
 
 
 // fill in the _ to pass the final assertions

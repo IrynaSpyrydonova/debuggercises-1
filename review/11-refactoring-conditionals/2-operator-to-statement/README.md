@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/23/2020, 8:19:35 PM 
 
 ## [exercises](../../README.md)/[11-refactoring-conditionals](../README.md)/2-operator-to-statement 
 
@@ -27,9 +27,12 @@
 
 // refactor this function ot use if/else statements
 const conditional = (a, b) => {
-  const result = typeof a === 'boolean'
-    ? !a
-    : b;
+    let result ='';
+    if(typeof a === 'boolean'){
+      result = !a;
+    } else {
+      result = b;
+    }
   return result;
 };
 
@@ -77,11 +80,14 @@ console.assert(_6_actual === _6_expect, 'Test 4');
 
 // refactor this function ot use if/else statements
 const conditional = (a, b) => {
-  const result = !a && !b
-    ? a
-    : a && b
-      ? b
-      : typeof a;
+  let result = '';
+  if (!a && !b){
+    result = a;
+  } else if (a && b){
+    result = b;
+  } else {
+    result = typeof a;
+  }
   return result;
 };
 
@@ -139,13 +145,23 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 'use strict';
 
 const conditional = (a, b) => {
-  const result = typeof a === 'boolean'
-    ? a === b
-      ? a
-      : typeof b
-    : typeof b === 'boolean'
-      ? b
-      : typeof a;
+  let result ='';
+
+  if (typeof a === 'boolean'){
+    if(a === b){
+      result = a;
+    }else {
+      result = typeof b;
+    }
+    
+  } else{
+    if(typeof b === 'boolean'){
+      result = b;
+    }else {
+      result = typeof a;
+    }
+
+  }
   return result;
 };
 
