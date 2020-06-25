@@ -21,7 +21,7 @@ const _3_native = unaryMinus(_3_arg);
 console.assert(Object.is(_3_expect, _3_native), 'Test 3');
 
 const _4_arg = false;
-const _4_expect = -1;
+const _4_expect = -0;
 const _4_native = unaryMinus(_4_arg);
 console.assert(Object.is(_4_expect, _4_native), 'Test 4');
 

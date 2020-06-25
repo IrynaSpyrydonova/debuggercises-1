@@ -24,6 +24,8 @@ const b = (y) => {
   return result;
 };
 
+// this one is the pure function
+
 const c = (y, x) => {
   const m = y - x
   return x + m;
