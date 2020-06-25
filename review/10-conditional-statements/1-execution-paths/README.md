@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/23/2020, 8:19:35 PM 
+> 6/25/2020, 12:40:21 PM 
 
 ## [exercises](../../README.md)/[10-conditional-statements](../README.md)/1-execution-paths 
 

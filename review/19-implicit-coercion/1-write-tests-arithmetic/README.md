@@ -1,14 +1,14 @@
 # Debuggercises 
 
-> 6/23/2020, 8:19:35 PM 
+> 6/25/2020, 12:40:21 PM 
 
 ## [exercises](../../README.md)/[19-implicit-coercion](../README.md)/1-write-tests-arithmetic 
 
 - [/division.js](#divisionjs) - _pass_ 
 - [/multiplication.js](#multiplicationjs) - _pass_ 
-- [/remainder.js](#remainderjs) - _fail_ 
+- [/remainder.js](#remainderjs) - _pass_ 
 - [/subtraction.js](#subtractionjs) - _pass_ 
-- [/unary-minus.js](#unary-minusjs) - _fail_ 
+- [/unary-minus.js](#unary-minusjs) - _pass_ 
 - [/unary-plus.js](#unary-plusjs) - _pass_ 
 ---
 
@@ -189,16 +189,16 @@ console.assert(Object.is(_9_expect, _9_native), 'Test 9');
 
 ## /remainder.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/19-implicit-coercion/1-write-tests-arithmetic/remainder.js)
 
 ```txt
 + PASS: Test 1
 + PASS: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
-- FAIL: Test 5
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
 + PASS: Test 6
 + PASS: Test 7
 + PASS: Test 8
@@ -228,20 +228,20 @@ const _2_expect = 2;
 const _2_native = remainder(_2_a, _2_b);
 console.assert(Object.is(_2_expect, _2_native), 'Test 2');
 
-const _3_a = '5';
-const _3_b = NaN;
+const _3_a = 18;
+const _3_b = '5';
 const _3_expect = 3;
 const _3_native = remainder(_3_a, _3_b);
 console.assert(Object.is(_3_expect, _3_native), 'Test 3');
 
-const _4_a = '5'; // find a different value than above
-const _4_b = NaN;
+const _4_a = 3; // find a different value than above
+const _4_b = '5';
 const _4_expect = 3;
 const _4_native = remainder(_4_a, _4_b);
 console.assert(Object.is(_4_expect, _4_native), 'Test 4');
 
-const _5_a = '5'; // find a different value than above
-const _5_b = NaN;
+const _5_a = 23; // find a different value than above
+const _5_b = '5';
 const _5_expect = 3;
 const _5_native = remainder(_5_a, _5_b);
 console.assert(Object.is(_5_expect, _5_native), 'Test 5');
@@ -364,7 +364,7 @@ console.assert(Object.is(_9_expect, _9_native), 'Test 9');
 
 ## /unary-minus.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/19-implicit-coercion/1-write-tests-arithmetic/unary-minus.js)
 
@@ -372,7 +372,7 @@ console.assert(Object.is(_9_expect, _9_native), 'Test 9');
 + PASS: Test 1
 + PASS: Test 2
 + PASS: Test 3
-- FAIL: Test 4
++ PASS: Test 4
 + PASS: Test 5
 + PASS: Test 6
 + PASS: Test 7
@@ -404,7 +404,7 @@ const _3_native = unaryMinus(_3_arg);
 console.assert(Object.is(_3_expect, _3_native), 'Test 3');
 
 const _4_arg = false;
-const _4_expect = -1;
+const _4_expect = -0;
 const _4_native = unaryMinus(_4_arg);
 console.assert(Object.is(_4_expect, _4_native), 'Test 4');
 
