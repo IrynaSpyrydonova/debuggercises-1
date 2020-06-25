@@ -30,6 +30,6 @@ console.assert(isTrue3, 'Test 3');
 const isTrue4 = d === 4;
 console.assert(isTrue4, 'Test 4');
 
-const isTrue5 = temp === _;
+const isTrue5 = temp === 4;
 console.assert(isTrue5, 'Test 5');
 

@@ -1,34 +1,32 @@
 # Debuggercises 
 
-> 6/25/2020, 12:40:21 PM 
+> 6/25/2020, 1:17:57 PM 
 
 ## [exercises](../../README.md)/[10-conditional-statements](../README.md)/1-execution-paths 
 
-- [/1-write-expected.js](#1-write-expectedjs) - _incomplete_ 
+- [/1-write-expected.js](#1-write-expectedjs) - _pass_ 
 - [/2-write-arguments.js](#2-write-argumentsjs) - _pass_ 
-- [/3-write-arguments.js](#3-write-argumentsjs) - _fail_ 
-- [/4-write-function.js](#4-write-functionjs) - _incomplete_ 
+- [/3-write-arguments.js](#3-write-argumentsjs) - _pass_ 
+- [/4-write-function.js](#4-write-functionjs) - _pass_ 
 - [/5-write-function.js](#5-write-functionjs) - _pass_ 
 ---
 
 ## /1-write-expected.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/10-conditional-statements/1-execution-paths/1-write-expected.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/10-conditional-statements/1-execution-paths/1-write-expected.js:14:19)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
-    at Module.load (internal/modules/cjs/loader.js:1002:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-    at require (internal/modules/cjs/helpers.js:77:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -45,39 +43,39 @@ const mystery = (a, b) => {
 };
 
 
-const _1_expect = _;
+const _1_expect = 'path 2';
 const _1_actual = mystery(0, null);
 console.assert(_1_actual === _1_expect, 'Test 1');
 
-const _2_expect = _;
+const _2_expect = 'path 3';
 const _2_actual = mystery(false, 'hello');
 console.assert(_2_actual === _2_expect, 'Test 2');
 
-const _3_expect = _;
+const _3_expect = 'path 3';
 const _3_actual = mystery(true, undefined);
 console.assert(_3_actual === _3_expect, 'Test 3');
 
-const _4_expect = _;
+const _4_expect = 'path 1';
 const _4_actual = mystery(1, -1);
 console.assert(_4_actual === _4_expect, 'Test 4');
 
-const _5_expect = _;
+const _5_expect = 'path 2';
 const _5_actual = mystery('', '');
 console.assert(_5_actual === _5_expect, 'Test 5');
 
-const _6_expect = _;
+const _6_expect = 'path 1';
 const _6_actual = mystery('_6_expect', '_6_actual');
 console.assert(_6_actual === _6_expect, 'Test 6');
 
-const _7_expect = _;
+const _7_expect = 'path 3';
 const _7_actual = mystery(0, 12);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
-const _8_expect = _;
+const _8_expect = 'path 2';
 const _8_actual = mystery(null, undefined);
 console.assert(_8_actual === _8_expect, 'Test 8');
 
-const _9_expect = _;
+const _9_expect = 'path 3';
 const _9_actual = mystery(NaN, Infinity);
 console.assert(_9_actual === _9_expect, 'Test 9');
 
@@ -162,18 +160,18 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /3-write-arguments.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/10-conditional-statements/1-execution-paths/3-write-arguments.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
 + PASS: Test 5
 + PASS: Test 6
-- FAIL: Test 7
++ PASS: Test 7
 + PASS: Test 8
 ```
 
@@ -198,20 +196,20 @@ const mystery = (a, b) => {
 
 // path 1
 const _1_expect = 'path 1';
-const _1_actual = mystery(0, null);
+const _1_actual = mystery(0, Infinity);
 console.assert(_1_actual === _1_expect, 'Test 1');
 
 const _2_expect = 'path 1';
-const _2_actual = mystery(false, 'hello');
+const _2_actual = mystery(1000, 15.5);
 console.assert(_2_actual === _2_expect, 'Test 2');
 
 // path 2
 const _3_expect = 'path 2';
-const _3_actual = mystery(true, undefined);
+const _3_actual = mystery(1, undefined);
 console.assert(_3_actual === _3_expect, 'Test 3');
 
 const _4_expect = 'path 2';
-const _4_actual = mystery(1, -1);
+const _4_actual = mystery(1, false);
 console.assert(_4_actual === _4_expect, 'Test 4');
 
 // path 3
@@ -225,7 +223,7 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 
 // path 4
 const _7_expect = 'path 4';
-const _7_actual = mystery(0, 12);
+const _7_actual = mystery(false, 12);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
 const _8_expect = 'path 4';
@@ -240,32 +238,33 @@ console.assert(_8_actual === _8_expect, 'Test 8');
 
 ## /4-write-function.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/10-conditional-statements/1-execution-paths/4-write-function.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at mystery (  ...  /exercises/10-conditional-statements/1-execution-paths/4-write-function.js:3:3)
-    at Object.<anonymous> (  ...  /exercises/10-conditional-statements/1-execution-paths/4-write-function.js:17:20)
-    at Module._compile (internal/modules/cjs/loader.js:1158:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
-    at Module.load (internal/modules/cjs/loader.js:1002:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
-    at Module.require (internal/modules/cjs/loader.js:1044:19)
-    at require (internal/modules/cjs/helpers.js:77:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
++ PASS: Test 01
++ PASS: Test 02
++ PASS: Test 03
++ PASS: Test 04
++ PASS: Test 05
++ PASS: Test 06
++ PASS: Test 07
++ PASS: Test 08
++ PASS: Test 09
++ PASS: Test 10
++ PASS: Test 11
++ PASS: Test 12
 ```
 
 ```js
 const mystery = (a, b) => {
   let result = '';
-  if (_) {
+  if (a && b) {
     result = 'path 1';
-  } else if (_) {
+  } else if (!a && !b) {
     result = 'path 2';
-  } else if (_) {
+  } else if ( typeof a === typeof b) {
     result = 'path 3';
   } else {
     result = 'path 4';

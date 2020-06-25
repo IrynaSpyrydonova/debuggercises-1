@@ -1,11 +1,11 @@
 # Debuggercises 
 
-> 6/25/2020, 12:40:21 PM 
+> 6/25/2020, 1:17:57 PM 
 
 ## [exercises](../../README.md)/[12-functions-301](../README.md)/2-fix-the-bugs 
 
 - [/1.js](#1js) - _pass_ 
-- [/2.js](#2js) - _fail_ 
+- [/2.js](#2js) - _pass_ 
 - [/3.js](#3js) - _pass_ 
 ---
 
@@ -87,15 +87,15 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 
 ## /2.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/12-functions-301/2-fix-the-bugs/2.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
 + PASS: Test 5
 + PASS: Test 6
 ```
@@ -118,11 +118,12 @@ const areNotSameLength = (str1, str2) => {
   if (typeof str2 !== 'string') { throw new TypeError('str2'); }
 
   let result;
-  if (str1.Length !== str2.Length) {
+  if (str1.length !== str2.length) {
     result = true;
   } else {
-    result =false;
+    result = false;
   }
+
 
   if (typeof result !== 'boolean') { throw new TypeError('result'); }
   return result;
